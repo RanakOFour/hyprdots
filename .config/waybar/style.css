@@ -50,13 +50,17 @@ button:hover {
 
 /* you can set a style on hover for any module like this */
 #pulseaudio:hover {
-    background-color: #a37800;
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 #workspaces button {
     padding: 0 5px;
     background-color: transparent;
     color: #ffffff;
+}
+
+#workspaces button.active {
+    background-color: rgba(106, 54, 173, 1);
 }
 
 #workspaces button:hover {
@@ -114,7 +118,7 @@ button:hover {
 }
 
 #clock {
-    background-color: #64727D;
+    background-color: transparent;
 }
 
 #battery {
@@ -169,12 +173,12 @@ label:focus {
 }
 
 #cpu {
-    background-color: #2ecc71;
-    color: #000000;
+    background-color: transparent;
+    color: #ffffff;
 }
 
 #memory {
-    background-color: #9b59b6;
+    background-color: transparent;
 }
 
 #disk {
@@ -186,7 +190,11 @@ label:focus {
 }
 
 #network {
-    background-color: #2980b9;
+    background-color: transparent;
+}
+
+#network:hover {
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 #network.disconnected {
@@ -194,8 +202,7 @@ label:focus {
 }
 
 #pulseaudio {
-    background-color: #f1c40f;
-    color: #000000;
+    background-color: transparent;
 }
 
 #pulseaudio.muted {
@@ -226,8 +233,12 @@ label:focus {
     background-color: #ffa000;
 }
 
+#custom-power {
+    font-size: 18px;
+}
+
 #temperature {
-    background-color: #f0932b;
+    background-color: transparent;
 }
 
 #temperature.critical {
@@ -235,7 +246,7 @@ label:focus {
 }
 
 #tray {
-    background-color: #2980b9;
+    background-color: transparent;
 }
 
 #tray > .passive {
